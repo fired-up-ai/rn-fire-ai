@@ -1,0 +1,12 @@
+{
+  "name": "common-ui",
+  "version": "0.1.0",
+  "description": "Common UI elements for all fired up apps",
+  "main": "index.ts",
+  "author": "Sukrut S. Sathaye <sukrutssathaye@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react-native-paper": "^5.12.3"
+  }
+}
