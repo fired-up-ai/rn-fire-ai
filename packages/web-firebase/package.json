@@ -6,5 +6,20 @@
   "repository": "github.com/fired-up-ai/rn-fire-ai.git",
   "author": "Sukrut S Sathaye <sukrutssathaye@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "firebase": "^10.12.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.24.7",
+    "@firebase/rules-unit-testing": "^3.0.3",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "whatwg-fetch": "^3.6.20"
+  }
 }
