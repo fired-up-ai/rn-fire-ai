@@ -105,6 +105,9 @@ export default class FirebaseCore {
         };
         
         const app = initializeApp(config);
+        // TODO: Add auth persistence for web and react-native
+        // For web use: setPersistence(auth, browserLocalPersistence)
+        // For react-native use: setPersistence(auth, reactNativePersistence)
         
         this.firebase = {
             app,
