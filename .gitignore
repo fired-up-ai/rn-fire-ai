@@ -5,3 +5,4 @@ node_modules
 # Temp disable github workflow
 .github/workflows/*
 dist/
+settings.json
