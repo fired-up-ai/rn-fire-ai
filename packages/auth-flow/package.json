@@ -6,5 +6,10 @@
   "repository": "github.com/fired-up-ai/rn-fire-ai.git",
   "author": "Sukrut S. Sathaye <sukrutssathaye@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "react-native-paper": "5.11.5",
+    "@fired-up-ai/web-firebase": "*",
+    "@fired-up-ai/common-ui": "*"
+  }
 }
