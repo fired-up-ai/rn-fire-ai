@@ -1,24 +1,31 @@
 // @fired-up-ai/common-ui/src/components/WelcomePage.tsx
 import React from 'react';
-import { View, Text, ImageBackground, StyleSheet } from 'react-native';
-import AuthButtons from '../auth/AuthButtons';
+import { View, Text, ImageBackground, StyleSheet, ImageSourcePropType } from 'react-native';
+import AuthButtons from './AuthButtons';
 
 interface WelcomePageProps {
-  onSignIn: () => void;
-  onSignUp: () => void;
+  image: ImageSourcePropType;
+  title: string;
+  description: string;
+  onSignInPress: () => void;
+  onSignUpPress: () => void;
 }
 
-const WelcomePage: React.FC<WelcomePageProps> = ({ onSignIn, onSignUp }) => {
+const WelcomePage: React.FC<WelcomePageProps> = (
+  { 
+    image, 
+    title, 
+    description, 
+    onSignInPress, 
+    onSignUpPress 
+  }
+) => {
   return (
-    <ImageBackground
-      source={require('../assets/background.jpg')}
-      style={styles.background}
-    >
+    <ImageBackground source={image} style={styles.background}>
       <View style={styles.container}>
-        <Text style={styles.title}>Fire App</Text>
-        <Text style={styles.description}>
-          Welcome to Fire App. Sign in or create an account to get started.
-        </Text>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.description}>{description}</Text>
+        <AuthButtons onSignInPress={onSignInPress} onSignUpPress={onSignUpPress} />
       </View>
     </ImageBackground>
   );
