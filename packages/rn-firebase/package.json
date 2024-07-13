@@ -1,0 +1,10 @@
+{
+  "name": "@fired-up-ai/rn-firebase",
+  "version": "0.1.0",
+  "description": "React Native Firebase Helper Implementation",
+  "main": "index.ts",
+  "repository": "github.com/fired-up-ai/rn-fire-ai.git",
+  "author": "Sukrut S. Sathaye <sukrutssathaye@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
