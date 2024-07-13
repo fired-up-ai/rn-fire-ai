@@ -1,4 +1,4 @@
-// app/components/AuthButtons.tsx
+
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Button, Modal, Portal } from 'react-native-paper';
