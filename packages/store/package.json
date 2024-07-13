@@ -1,0 +1,10 @@
+{
+  "name": "@fired-up-ai/store",
+  "version": "0.1.0",
+  "description": "Redux Store for managing the state of all components centrally",
+  "main": "index.ts",
+  "repository": "github.com/fired-up-ai/rn-fire-ai.git",
+  "author": "Sukrut S Sathaye <sukrutssathaye@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
