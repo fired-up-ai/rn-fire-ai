@@ -1,7 +1,7 @@
 // /src/ctx/AuthContext.tsx
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useRouter, useSegments } from 'expo-router';
-import { AuthService } from 'web-firebase';
+import { AuthService } from '@fired-up-ai/web-firebase';
 
 type AuthContextType = {
     user: any | null;
