@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "react-native-paper": "5.11.5",
-    "web-firebase": "*"
+    "@fired-up-ai/web-firebase": "*",
+    "@fired-up-ai/store": "*"
   }
 }
