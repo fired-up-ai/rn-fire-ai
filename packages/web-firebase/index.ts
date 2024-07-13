@@ -8,7 +8,7 @@ import AbstractStorage from "./src/models/AbstractStorage";
 
 
 
-module.exports = {
+export {
     FirebaseCore,
     AbstractAuth,
     AuthService,
