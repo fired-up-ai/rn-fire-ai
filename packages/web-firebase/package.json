@@ -1,5 +1,5 @@
 {
-  "name": "web-firebase",
+  "name": "@fired-up-ai/web-firebase",
   "version": "0.1.0",
   "description": "Implementation of basic firebase services using Web-Modular-API",
   "main": "index.ts",
