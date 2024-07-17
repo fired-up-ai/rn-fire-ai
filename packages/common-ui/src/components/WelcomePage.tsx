@@ -4,7 +4,7 @@ import { View, Text, ImageBackground, StyleSheet, ImageSourcePropType } from 're
 import AuthButtons from './AuthButtons';
 
 interface WelcomePageProps {
-  image: ImageSourcePropType;
+  image: ImageSourcePropType | null;
   title: string;
   description: string;
   onSignInPress: () => void;
@@ -20,14 +20,20 @@ const WelcomePage: React.FC<WelcomePageProps> = (
     onSignUpPress 
   }
 ) => {
-  return (
+  const content = (
+    <View style={styles.container}>
+      <Text style={styles.title}>{title}</Text>
+      <Text style={styles.description}>{description}</Text>
+      <AuthButtons onSignInPress={onSignInPress} onSignUpPress={onSignUpPress} />
+    </View>
+  );
+
+  return image ? (
     <ImageBackground source={image} style={styles.background}>
-      <View style={styles.container}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.description}>{description}</Text>
-        <AuthButtons onSignInPress={onSignInPress} onSignUpPress={onSignUpPress} />
-      </View>
+      {content}
     </ImageBackground>
+  ) : (
+    content
   );
 };
 
