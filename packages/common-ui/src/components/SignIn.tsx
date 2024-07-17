@@ -67,7 +67,7 @@ const SignIn: React.FC<SignInProps> = ({
         />
       )}
       <Button title={mode === 'signin' ? 'Sign In' : 'Sign Up'} onPress={handleSubmit} />
-      
+      <Text style={styles.additionalText}>Or sign in with:</Text>
       <View style={styles.socialButtonsContainer}>
         <TouchableOpacity style={styles.socialButton} onPress={onGoogleSignIn}>
           <Ionicons name="logo-google" size={24} color="red" />
@@ -106,6 +106,10 @@ const styles = StyleSheet.create({
   },
   socialButtonText: {
     marginLeft: 10,
+  },
+  additionalText: {
+    textAlign: 'center',
+    marginTop: 20,
   },
 });
 
