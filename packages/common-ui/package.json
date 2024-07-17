@@ -7,8 +7,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "react-native-paper": "5.11.5",
+    "@expo/vector-icons": "^14.0.2",
+    "@fired-up-ai/store": "*",
     "@fired-up-ai/web-firebase": "*",
-    "@fired-up-ai/store": "*"
+    "react": "^18.3.1",
+    "react-native": "^0.74.3",
+    "react-native-paper": "5.11.5"
   }
 }
