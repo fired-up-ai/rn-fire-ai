@@ -1,4 +1,4 @@
-rootProject.name = 'firechat'
+rootProject.name = 'fire-chat'
 
 dependencyResolutionManagement {
   versionCatalogs {
