@@ -1,0 +1,56 @@
+{
+  "cesVersion": "2.11.12",
+  "projectName": "one-stop-shop",
+  "packages": [
+    {
+      "name": "expo-router",
+      "type": "navigation",
+      "options": {
+        "type": "tabs"
+      }
+    },
+    {
+      "name": "nativewindui",
+      "type": "styling",
+      "options": {
+        "selectedComponents": [
+          "activity-view",
+          "avatar",
+          "bottom-sheet",
+          "date-picker",
+          "picker",
+          "progress-indicator",
+          "ratings-indicator",
+          "selectable-text",
+          "slider",
+          "text",
+          "toggle",
+          "activity-indicator",
+          "action-sheet"
+        ]
+      }
+    },
+    {
+      "name": "firebase",
+      "type": "authentication"
+    }
+  ],
+  "flags": {
+    "noGit": false,
+    "noInstall": false,
+    "overwrite": false,
+    "importAlias": true,
+    "packageManager": "yarn",
+    "eas": true
+  },
+  "packageManager": {
+    "type": "yarn",
+    "version": "1.22.22"
+  },
+  "os": {
+    "type": "Linux",
+    "platform": "linux",
+    "arch": "x64",
+    "kernelVersion": "5.15.153.1-microsoft-standard-WSL2"
+  }
+}
