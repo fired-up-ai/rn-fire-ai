@@ -7,8 +7,10 @@
   "author": "Sukrut S. Sathaye <sukrutssathaye@gmail.com>",
   "license": "MIT",
   "private": true,
+  "peerDependencies": {
+    "react-native-paper": "5.11.5"
+  },
   "dependencies": {
-    "react-native-paper": "5.11.5",
     "@fired-up-ai/web-firebase": "*",
     "@fired-up-ai/common-ui": "*"
   }
