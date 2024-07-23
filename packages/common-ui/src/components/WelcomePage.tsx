@@ -29,7 +29,7 @@ const WelcomePage: React.FC<WelcomePageProps> = (
   );
 
   return image ? (
-    <ImageBackground source={image} style={styles.background}>
+    <ImageBackground testID="background-image" source={image} style={styles.background}>
       {content}
     </ImageBackground>
   ) : (
