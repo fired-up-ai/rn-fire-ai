@@ -2,7 +2,7 @@ module.exports = {
     preset: 'react-native',
     setupFilesAfterEnv: ['<rootDir>/jest-setup.js'],
     transformIgnorePatterns: [
-      'node_modules/(?!(jest-)?react-native|@react-native|@react-navigation|@react-native-polyfills)',
+      'node_modules/(?!(jest-)?react-native|@react-native|@react-navigation|@react-native-polyfills|@expo/vector-icons)',
     ],
     transform: {
       '^.+\\.jsx?$': 'babel-jest',
