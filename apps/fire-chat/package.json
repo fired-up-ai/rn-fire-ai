@@ -1,5 +1,5 @@
 {
-  "name": "fire-chat",
+  "name": "@fired-up-ai/fire-chat",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
