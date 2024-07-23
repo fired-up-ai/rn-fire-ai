@@ -21,7 +21,10 @@
     "react-native-paper": "5.11.5",
     "react-redux" : "^9.1.2",
     "@reduxjs/toolkit": "2.2.6",
-    "nativewind": "^4.0.1"
+    "nativewind": "^4.0.1",
+    "@expo/metro-runtime": "~3.2.1",
+    "expo-router": "~3.5.17",
+    "expo-secure-store": "^13.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
