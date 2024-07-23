@@ -4,7 +4,7 @@ import { Provider as ReduxProvider } from 'react-redux';
 import { PaperProvider } from 'react-native-paper';
 import {store} from '@fired-up-ai/store';
 
-const withProviders = (Component) => (props) => (
+const withProviders = (Component: any) => (props: any) => (
   <ReduxProvider store={store}>
     <PaperProvider>
       <Component {...props} />
