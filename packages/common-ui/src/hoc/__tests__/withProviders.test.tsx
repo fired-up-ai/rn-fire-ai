@@ -1,6 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import withProviders from '../withProviders'; // Adjust the import path as necessary
+import {
+  withProviders,
+  withRedux,
+  withPaper,
+  withDarkPaper,
+  withLightPaper
+} from '../withProviders'; // Adjust the import path as necessary
 import { store } from '@fired-up-ai/store';
 import * as redux from 'react-redux';
 import * as paper from 'react-native-paper';
