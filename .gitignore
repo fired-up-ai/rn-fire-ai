@@ -7,3 +7,4 @@ node_modules
 dist/
 settings.json
 coverage/
+*-debug.log
