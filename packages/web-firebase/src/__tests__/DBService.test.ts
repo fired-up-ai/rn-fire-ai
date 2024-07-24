@@ -5,12 +5,19 @@ import {
 
 import DBService from "../services/DBService";
 
+let testEnv: RulesTestEnvironment;
 beforeAll(async () => {
     // Set up the test environment before running the tests.
     // This will trigger the emulator to start and link with Firebase Project
-    await initializeTestEnvironment({
+    testEnv = await initializeTestEnvironment({
         projectId: process.env.FIREBASE_PROJECT_ID
     });
+});
+
+afterAll(async () => {
+    // Tear down the test environment after tests are done.
+    // This will trigger the emulator to stop
+    await testEnv.cleanup()
 });
 
 describe("DBService", () => {
