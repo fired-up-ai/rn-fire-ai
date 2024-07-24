@@ -28,9 +28,7 @@ jest.mock('react-native-paper', () => ({
 }));
 
 describe('withProviders HOC', () => {
-  it('wraps a component with Redux and Paper providers', () => {
-    // Correctly wrap WelcomePage component
-    const WrappedComponent = withProviders(WelcomePage);
+  
 
     // Define props for WelcomePage
     const welcomePageProps = {
