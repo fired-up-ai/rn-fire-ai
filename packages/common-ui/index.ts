@@ -5,7 +5,13 @@ import WelcomePage from './src/components/WelcomePage';
 import AuthButtons from './src/components/AuthButtons';
 import ValidatedText from './src/components/ValidatedText';
 import SignIn from './src/components/SignIn';
-import withProviders from './src/hoc/withProviders';
+import { 
+  withProviders, 
+  withPaper, 
+  withRedux, 
+  withDarkPaper,
+  withLightPaper
+} from './src/hoc/withProviders';
 
 // Export all components
 export {
