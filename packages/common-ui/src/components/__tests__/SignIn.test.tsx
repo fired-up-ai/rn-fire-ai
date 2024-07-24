@@ -87,4 +87,9 @@ describe('SignIn Component', () => {
         fireEvent.press(getByText('Sign Up with Email'));
         expect(mockSubmit).not.toHaveBeenCalled();
     });
+
+    it('matches snapshot', () => {
+      const tree = render(<SignIn mode="signin" onSubmit={jest.fn()} onGoogleSignIn={jest.fn()} onGithubSignIn={jest.fn()} />).toJSON();
+      expect(tree).toMatchSnapshot();
+    })
 });
