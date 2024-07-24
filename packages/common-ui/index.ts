@@ -19,5 +19,9 @@ export {
   AuthButtons,
   ValidatedText,
   SignIn,
-  withProviders
+  withProviders,
+  withPaper,
+  withRedux,
+  withDarkPaper,
+  withLightPaper
 };
