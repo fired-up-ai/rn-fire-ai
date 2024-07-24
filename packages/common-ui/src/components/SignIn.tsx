@@ -74,11 +74,17 @@ const SignIn: React.FC<SignInProps> = ({
       <View style={styles.socialButtonsContainer}>
         <TouchableOpacity style={styles.socialButton} onPress={onGoogleSignIn}>
           <Ionicons name="logo-google" size={24} color="red" />
-          <Text style={styles.socialButtonText}>Google</Text>
+          <Text 
+            style={styles.socialButtonText}>
+              Google
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.socialButton} onPress={onGithubSignIn}>
           <Ionicons name="logo-github" size={24} color="black" />
-          <Text style={styles.socialButtonText}>GitHub</Text>
+          <Text 
+            style={styles.socialButtonText}>
+              GitHub
+          </Text>
         </TouchableOpacity>
       </View>
     </View>
