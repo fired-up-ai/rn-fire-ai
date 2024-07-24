@@ -16,4 +16,30 @@ const withProviders = (Component: any) => (props: any) => (
   </ReduxProvider>
 );
 
-export default withProviders;
+const withDarkPaper = (Component: any) => (props: any) => (
+  <PaperProvider theme={MD3DarkTheme}>
+    <Component {...props} />
+  </PaperProvider>
+);
+
+const withLightPaper = (Component: any) => (props: any) => (
+  <PaperProvider theme={MD3LightTheme}>
+    <Component {...props} />
+  </PaperProvider>
+);
+
+const withRedux = (Component: any) => (props: any) => (
+  <ReduxProvider store={store}>
+    <Component {...props} />
+  </ReduxProvider>
+);
+
+const withPaper = (Component: any) => (props: any) => (
+  <PaperProvider>
+    <Component {...props} />
+  </PaperProvider>
+);
+
+
+
+export { withProviders, withDarkPaper, withLightPaper, withRedux, withPaper };
